@@ -65,6 +65,23 @@
       color: #000;
       margin-top: 20px;
     }
+
+    .qr {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .qr img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .btc-address {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
@@ -97,6 +114,12 @@
     <h2>Contact</h2>
     <p>Email us at: <a href="mailto:contact@futureresistance.org">contact@futureresistance.org</a></p>
     <p>Follow the project on <a href="https://github.com/bluedragonn" target="_blank">GitHub</a>.</p>
+
+    <div class="qr">
+      <p>If you'd like to support our project with Bitcoin:</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1qazk2hs98kgkqcuw57wm9avdke4g08jy9w0y5va&size=150x150" alt="Bitcoin QR Code" />
+      <div class="btc-address">bc1qazk2hs98kgkqcuw57wm9avdke4g08jy9w0y5va</div>
+    </div>
   </section>
 
   <footer>
@@ -104,3 +127,4 @@
   </footer>
 </body>
 </html>
+add bitcoin support
