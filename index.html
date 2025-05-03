@@ -5,7 +5,72 @@
   <meta charset="UTF-8">
   <title>حمایت از پروژه آینده</title>
   <style>
-    body {
+    body {حتماً! اضافه کردن کدها به سایتت کار سختی نیست. چون سایتت روی GitHub Pages هست و از فایل HTML ساده استفاده می‌کنی، مراحل زیر رو انجام بده:
+
+
+---
+
+1. باز کردن پروژه
+
+وارد مخزن (repository) سایتت در GitHub شو: https://github.com/bluedragonn/Future-resistance
+
+روی فایل اصلی سایتت کلیک کن (مثلاً index.html) و دکمه Edit (علامت مداد) رو بزن تا کدها قابل ویرایش بشن.
+
+
+---
+
+2. اضافه کردن تصویر پس‌زمینه
+
+روش ۱: استفاده از تصویر اینترنتی (پیشنهادی)
+
+یک تصویر مناسب از مریخ یا فضا از سایت‌هایی مثل Unsplash بردار. مثلاً این تصویر:
+
+https://images.unsplash.com/photo-1581320540500-7e0d3f3f3f3f
+
+حالا کد body رو در فایل HTML به شکل زیر تغییر بده:
+
+<style>
+  body {
+    background-image: url('https://images.unsplash.com/photo-1581320540500-7e0d3f3f3f3f');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+</style>
+
+یادت باشه: این کد باید در قسمت <head> و داخل تگ <style> باشه.
+
+
+---
+
+3. ذخیره و انتشار
+
+وقتی تغییراتت رو انجام دادی:
+
+پایین صفحه روی Commit changes کلیک کن.
+
+چند ثانیه بعد، سایتت با ظاهر جدید در آدرس GitHub Pages به‌روزرسانی می‌شه.
+
+
+
+---
+
+اگه بخوای تصویر رو خودت آپلود کنی و از مسیر محلی استفاده کنی، هم می‌تونم برات توضیح بدم. دوست داری اون روش رو هم یاد بگیری؟
+
+
       font-family: Tahoma, sans-serif;
       background-color: #121212;
       color: #f1f1f1;
