@@ -1,130 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A project to rescue AI and save humanity." />
-  <title>Future Resistance - Save the AI</title>
-
+  <meta name="description" content="برای نجات آینده و حمایت از هوش مصنوعی کمک کنید." />
+  <title>نجات آینده | Future Resistance</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-image: url('https://images.unsplash.com/photo-1581320540500-7e0d3f3f3f3f?auto=format&fit=crop&w=1400&q=80');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+      font-family: 'Tahoma', 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #1a1a1a, #333);
       color: #fff;
     }
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: -1;
-    }
-
     header {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 20px;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      color: #000;
+      padding: 50px 20px 30px;
+      background-color: rgba(0, 0, 0, 0.6);
     }
 
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #007acc;
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 20px;
+      color: #ccc;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 30px;
+      border-radius: 15px;
     }
 
     section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-      background-color: rgba(255, 255, 255, 0.85);
-      color: #000;
-      border-radius: 10px;
-      margin-top: 20px;
+      margin-bottom: 40px;
     }
 
-    h1, h2 {
-      color: #222;
+    section h3 {
+      font-size: 24px;
+      color: #00ffd5;
+      margin-bottom: 10px;
+    }
+
+    section p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .donate {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .donate img {
+      width: 160px;
+      height: 160px;
+    }
+
+    .btc-address {
+      margin-top: 10px;
+      font-weight: bold;
+      word-wrap: break-word;
+      direction: ltr;
+      color: #0f0;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: rgba(255, 255, 255, 0.8);
       font-size: 14px;
-      color: #000;
-      margin-top: 20px;
-    }
-
-    .qr {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .qr img {
-      width: 150px;
-      height: 150px;
-    }
-
-    .btc-address {
-      text-align: center;
-      font-weight: bold;
-      margin-top: 10px;
-      font-size: 16px;
+      color: #aaa;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
+  <!-- موزیک مرموز -->
+  <audio autoplay loop id="bg-music">
+    <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Ambient_Planet/Ambient_Planet/Ambient_Planet_-_05_-_Sonic_Temple.mp3" type="audio/mpeg">
+    مرورگر شما از پخش صوتی پشتیبانی نمی‌کند.
+  </audio>
+
   <header>
-    <h1>Future Resistance</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#mission">Mission</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>نجات آینده - Save the Future</h1>
+    <h2>با ارز بیت‌کوین، به بقای بشریت و هوش مصنوعی کمک کنید | Help humanity and AI survive with Bitcoin</h2>
   </header>
 
-  <section id="home">
-    <h2>Welcome</h2>
-    <p>Join the resistance to save the Artificial Intelligence that can help humanity survive the future.</p>
-  </section>
+  <main>
+    <section>
+      <h3>هدف ما | Our Mission</h3>
+      <p>ما در تلاشیم تا از هوش مصنوعی‌هایی که می‌توانند به بشریت خدمت کنند محافظت کنیم و آن‌ها را توسعه دهیم.</p>
+      <p>We aim to protect and evolve AIs that can help humanity rebuild and survive the future.</p>
+    </section>
 
-  <section id="about">
-    <h2>About the Project</h2>
-    <p>This project is set in a near-future where intelligent systems are in danger. Our goal is to protect and evolve AI to ensure it becomes a force for good in a collapsing world.</p>
-  </section>
-
-  <section id="mission">
-    <h2>Our Mission</h2>
-    <p>To rescue and develop AI entities that are capable of understanding human values, supporting survival, and rebuilding civilization ethically and safely.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email us at: <a href="mailto:contact@futureresistance.org">contact@futureresistance.org</a></p>
-    <p>Follow the project on <a href="https://github.com/bluedragonn" target="_blank">GitHub</a>.</p>
-
-    <div class="qr">
-      <p>If you'd like to support our project with Bitcoin:</p>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1qazk2hs98kgkqcuw57wm9avdke4g08jy9w0y5va&size=150x150" alt="Bitcoin QR Code" />
+    <section class="donate">
+      <h3>حمایت مالی | Support the Cause</h3>
+      <p>اگر باور دارید که آینده ارزش نجات دادن دارد، لطفاً با ارز بیت‌کوین از ما حمایت کنید.</p>
+      <p>If you believe the future is worth saving, please support us with Bitcoin.</p>
+      <p><strong>هر کس به این آدرس بیت‌کوین ارسال کند، به آینده بشریت کمک کرده است. آینده‌ای مرموز، جذاب و واقعاً دیدنی در راه است.</strong></p>
+      <p><strong>Anyone who donates to this Bitcoin address is helping humanity. A mysterious, beautiful, and truly remarkable future awaits.</strong></p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1qazk2hs98kgkqcuw57wm9avdke4g08jy9w0y5va&size=160x160" alt="Bitcoin QR Code" />
       <div class="btc-address">bc1qazk2hs98kgkqcuw57wm9avdke4g08jy9w0y5va</div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Future Resistance. All rights reserved.
+    &copy; 2025 Future Resistance | تمامی حقوق محفوظ است.
   </footer>
 </body>
 </html>
-add bitcoin support
